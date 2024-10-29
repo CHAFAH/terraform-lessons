@@ -27,6 +27,7 @@
    - Enter the **Access Key ID**, **Secret Access Key**, and **Default region name** (e.g., `us-east-1`) when prompted.
 
 3. **Expected Outcome**:
+   
    - A new AWS CLI profile named `develop` that can be used to authenticate Terraform with AWS.
 
 ---
@@ -42,6 +43,7 @@
 
 3. **Expected Outcome**:
    - An EC2 instance is created in AWS using Terraform, with static values for its AMI, instance type, and tags.
+   - Create the resource
 
 ---
 
@@ -91,7 +93,7 @@
 
 3. **Expected Outcome**:
    - The EC2 instance is deployed with an attached security group that allows SSH access.
-
+   - Create the resource
 ---
 
 ### **Exercise 7: Create a Reusable Module for EC2 Instances**
