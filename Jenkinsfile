@@ -32,6 +32,7 @@ pipeline {
         stage('TERRAFORM APPLY') {
             steps {
                 dir('2-Using Profiles') {
+                    echo 'destroying resources'
                     sh 'terraform destroy --auto-approve'
                 }
             }
