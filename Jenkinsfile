@@ -18,6 +18,7 @@ pipeline {
             steps {
                 dir('2-Using Profiles') {
                     sh 'terraform init'
+                    echo 'initialized successfully'
                 }
             }
         }
