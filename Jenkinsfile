@@ -32,7 +32,7 @@ pipeline {
         stage('TERRAFORM APPLY') {
             steps {
                 dir('2-Using Profiles') {
-                    sh 'terraform apply --auto-approve'
+                    sh 'terraform destroy --auto-approve'
                 }
             }
         }
