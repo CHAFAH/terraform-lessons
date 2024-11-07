@@ -28,5 +28,12 @@ pipeline {
                 }
             }
         }
+        stage('TERRAFORM APPLY') {
+            steps {
+                dir('2-Using Profiles') {
+                    sh 'terraform apply --auto-approve'
+                }
+            }
+        }
     }
 }
