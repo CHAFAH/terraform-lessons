@@ -1,4 +1,4 @@
-# Terraform-learning-zero-to-hero
+# Terraform-learning-zero-to-Hero
 Everything Terraform
 
 ## What is Terraform
