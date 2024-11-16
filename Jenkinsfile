@@ -24,6 +24,7 @@ pipeline {
         stage('TERRAFORM PLAN') {
             steps {
                 dir('2-Using Profiles') {
+                    sh 'terraform validate'
                     sh 'terraform plan'
                 }
             }
