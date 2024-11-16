@@ -11,6 +11,7 @@ pipeline {
         stage('CLONE GIT REPOSITORY') {
             steps {
                 echo "starting jenkins pipeline"
+                echo "Welcome to Danske Bank"
                 git branch: 'main', url: 'https://github.com/CHAFAH/terraform-lessons.git'
             }
         }
