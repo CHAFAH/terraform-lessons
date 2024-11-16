@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "starting jenkins pipeline"
                 echo "Welcome to Danske Bank"
-                git branch: 'main', url: 'https://github.com/CHAFAH/terraform-lessons.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/CHAFAH/terraform-lessons.git'
             }
         }
         stage('TERRAFORM INIT') {
