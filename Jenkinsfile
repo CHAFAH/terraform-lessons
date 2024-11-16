@@ -26,6 +26,7 @@ pipeline {
             steps {
                 dir('2-Using Profiles') {
                     sh 'terraform validate'
+                    sh 'terraform fmt'
                     sh 'terraform plan'
                 }
             }
